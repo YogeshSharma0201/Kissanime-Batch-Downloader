@@ -87,7 +87,7 @@ for (i = (episodeLinks.length - startEpisode); i >= (episodeLinks.length - endEp
 					// console.log(el);
 					if ( $(el).html().search(quals[j]) > -1 ){
 						long_url = $(el).attr('href');
-						linkStr += long_url + "\n";
+						linkStr += "Episode-"+(episodeLinks.length - i)+":"+long_url + "\r\n\r\n";
 						found = true;
 						// console.log('Episode ' + (episodeLinks.length - i));
 						console.log(long_url);
